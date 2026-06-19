@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - SweetCraft</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>🚚 Free Delivery on Orders above ₹999</span>
+        <span>⏱ Same Day Delivery in Select Locations</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="#">Track Order</a>
+        <a href="#">Find a Branch</a>
+        <a href="#">Help &amp; Support</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container">
+      <div class="header-row">
+        <div class="logo">
+          <a href="index.html">
+            <span class="logo-icon">🧁</span>
+            <span class="logo-text">SweetCraft</span>
+            <span class="logo-tagline">Crafted with Love</span>
+          </a>
+        </div>
+        <form class="search-bar" onsubmit="return false;">
+          <input type="text" placeholder="Search for cakes, pastries, chocolates...">
+          <button type="submit">🔍</button>
+        </form>
+        <div class="header-actions">
+          <div class="header-action">
+            <span class="icon">📍</span>
+            <div>Deliver to<br><strong>Chennai 600119</strong></div>
+          </div>
+          <a href="#" class="header-action">
+            <span class="icon">👤</span>
+            <div>Hi, Arun<br><strong>My Account</strong></div>
+          </a>
+          <a href="cart.html" class="cart-link header-action">
+            <span class="icon">🛒</span>
+            <span class="cart-badge">3</span>
+            <div>Cart<br><span class="cart-total">₹2,597</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li><a href="cakes.html">Cakes</a></li>
+        <li><a href="#">Pastries</a></li>
+        <li><a href="#">Chocolates</a></li>
+        <li><a href="#">Desserts</a></li>
+        <li><a href="#">Breads</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Gifting</a></li>
+        <li><a href="#">Combos</a></li>
+        <li><a href="#">Occasions</a></li>
+        <li><a href="#">Bestsellers</a></li>
+        <li><a href="#" class="nav-offers">🏷️ Offers</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="cart-layout">
+      <!-- Cart Items -->
+      <div class="cart-main">
+        <h1 class="cart-title" id="cart-title">Your Cart (3 Items)</h1>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="cart-items">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+        <div class="cart-actions">
+          <a href="cakes.html" class="btn btn-outline">← Continue Shopping</a>
+          <button class="btn btn-outline danger" id="clear-cart-btn">🗑️ Clear Cart</button>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <aside class="order-summary">
+        <h3>Order Summary</h3>
+        <div class="summary-row">
+          <span id="summary-subtotal-label">Subtotal (3 Items)</span>
+          <span id="summary-subtotal">₹2,597</span>
+        </div>
+        <div class="summary-row">
+          <span>Delivery Charge</span>
+          <span class="free">FREE</span>
+        </div>
+        <div class="summary-row">
+          <span>Packaging Charge</span>
+          <span>₹0</span>
+        </div>
+        <div class="summary-total">
+          <div>
+            <span id="summary-total">₹2,597</span>
+            <small>Inclusive of all taxes</small>
+          </div>
+        </div>
+        <div class="delivery-banner">✅ Yay! You get FREE delivery on this order.</div>
+
+        <p style="font-size:12px;font-weight:600;margin-bottom:8px;">Apply Coupon</p>
+        <div class="coupon-row">
+          <input type="text" placeholder="Enter coupon code">
+          <button>Apply</button>
+        </div>
+
+        <div class="gift-option">
+          <span>🎁</span>
+          <span>Want to send this as a gift? Add a message and make it extra special →</span>
+        </div>
+
+        <button class="btn btn-primary btn-block btn-lg" id="checkout-btn">Proceed to Checkout →</button>
+        <div class="secure-note">🔒 100% Secure Payments</div>
+      </aside>
+    </div>
+  </div>
+
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item"><span class="ti-icon">🚚</span><div><h4>Fast &amp; Reliable Delivery</h4><p>On time, every time</p></div></div>
+        <div class="trust-item"><span class="ti-icon">🎂</span><div><h4>Freshness Guaranteed</h4><p>Made with the finest ingredients</p></div></div>
+        <div class="trust-item"><span class="ti-icon">🔒</span><div><h4>100% Safe Payments</h4><p>Secure &amp; trusted checkout</p></div></div>
+        <div class="trust-item"><span class="ti-icon">🎁</span><div><h4>Perfect for Gifting</h4><p>Make every occasion special</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="payment-logos">
+      <span>We accept</span>
+      <span class="logo-item">VISA</span>
+      <span class="logo-item">Mastercard</span>
+      <span class="logo-item">RuPay</span>
+      <span class="logo-item">UPI</span>
+      <span class="logo-item">Paytm</span>
+      <span class="logo-item">PhonePe</span>
+      <span class="logo-item">GPay</span>
+      <span style="margin-left:auto;font-size:12px;">🛡️ 100% Secure — Your payment details are safe with us</span>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding-top:0;">
+        <span>© 2026 SweetCraft. All Rights Reserved.</span>
+        <span><a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

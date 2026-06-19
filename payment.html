@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - SweetCraft</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>🚚 Free Delivery on Orders above ₹999</span>
+        <span>⏱ Same Day Delivery in Select Locations</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="#">Track Order</a>
+        <a href="#">Find a Branch</a>
+        <a href="#">Help &amp; Support</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container">
+      <div class="header-row">
+        <div class="logo">
+          <a href="index.html">
+            <span class="logo-icon">🧁</span>
+            <span class="logo-text">SweetCraft</span>
+            <span class="logo-tagline">Crafted with Love</span>
+          </a>
+        </div>
+        <form class="search-bar" onsubmit="return false;">
+          <input type="text" placeholder="Search for cakes, pastries, chocolates...">
+          <button type="submit">🔍</button>
+        </form>
+        <div class="header-actions">
+          <div class="header-action">
+            <span class="icon">📍</span>
+            <div>Deliver to<br><strong>Chennai 600119</strong></div>
+          </div>
+          <a href="#" class="header-action">
+            <span class="icon">👤</span>
+            <div>Hi, Arun<br><strong>My Account</strong></div>
+          </a>
+          <a href="cart.html" class="cart-link header-action">
+            <span class="icon">🛒</span>
+            <span class="cart-badge">3</span>
+            <div>Cart<br><span class="cart-total">₹2,597</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li><a href="cakes.html">Cakes</a></li>
+        <li><a href="#">Pastries</a></li>
+        <li><a href="#">Chocolates</a></li>
+        <li><a href="#">Desserts</a></li>
+        <li><a href="#">Breads</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Gifting</a></li>
+        <li><a href="#">Combos</a></li>
+        <li><a href="#">Occasions</a></li>
+        <li><a href="#">Bestsellers</a></li>
+        <li><a href="#" class="nav-offers">🏷️ Offers</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Checkout Steps -->
+    <div class="checkout-steps">
+      <div class="step completed">
+        <span class="step-circle">✓</span>
+        <span>Cart</span>
+      </div>
+      <div class="step-line done"></div>
+      <div class="step completed">
+        <span class="step-circle">✓</span>
+        <span>Delivery Information</span>
+      </div>
+      <div class="step-line done"></div>
+      <div class="step active">
+        <span class="step-circle">3</span>
+        <span>Payment</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <span class="step-circle">4</span>
+        <span>Review &amp; Place Order</span>
+      </div>
+    </div>
+
+    <div class="payment-layout">
+      <!-- Payment Section -->
+      <div class="payment-section">
+        <h2>Payment</h2>
+        <p>Choose a payment method to proceed.</p>
+
+        <div class="payment-box">
+          <div class="payment-methods">
+            <label class="payment-method active" data-method="upi">
+              <input type="radio" name="payment" checked> 📱 UPI / QR
+            </label>
+            <label class="payment-method" data-method="card">
+              <input type="radio" name="payment"> 💳 Credit / Debit Card
+            </label>
+            <label class="payment-method" data-method="netbanking">
+              <input type="radio" name="payment"> 🏦 Net Banking
+            </label>
+            <label class="payment-method" data-method="wallets">
+              <input type="radio" name="payment"> 👛 Wallets
+            </label>
+            <label class="payment-method" data-method="emi">
+              <input type="radio" name="payment"> 📊 EMI
+            </label>
+            <label class="payment-method" data-method="cod">
+              <input type="radio" name="payment"> 💵 Cash on Delivery
+            </label>
+          </div>
+          <div class="payment-details" id="payment-details-content">
+            <h3>Pay using UPI</h3>
+            <p>Scan the QR code using any UPI app</p>
+            <div class="qr-code">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=sweetcraft@upi" alt="UPI QR Code">
+            </div>
+            <div class="upi-logos">
+              <span>UPI</span>
+              <span>GPay</span>
+              <span>PhonePe</span>
+              <span>Paytm</span>
+            </div>
+            <p style="font-size:12px;margin-bottom:8px;">Or pay using UPI ID</p>
+            <div class="upi-id-row">
+              <input type="text" value="sweetcraft@upi" readonly id="upi-id">
+              <button id="copy-upi">Copy</button>
+            </div>
+            <div class="secure-banner">🛡️ 100% Secure Payments</div>
+          </div>
+        </div>
+
+        <div class="payment-footer-actions">
+          <a href="cart.html" class="back-btn">← Back to Delivery Information</a>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-size:12px;color:#999;">🔒 Secure Checkout</span>
+            <button class="btn btn-primary btn-lg" id="pay-btn">Pay <span id="pay-amount">₹2,597</span> ›</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <aside class="order-summary order-summary-payment">
+        <h3>Order Summary <a href="cart.html" class="edit-cart-link">Edit Cart</a></h3>
+        <div id="payment-items">
+          <!-- Rendered by JS -->
+        </div>
+        <div class="summary-row" style="margin-top:12px;">
+          <span id="summary-subtotal-label">Subtotal (3 Items)</span>
+          <span id="summary-subtotal">₹2,597</span>
+        </div>
+        <div class="summary-row">
+          <span>Delivery Charge</span>
+          <span class="free">FREE</span>
+        </div>
+        <div class="summary-row">
+          <span>Packaging Charge</span>
+          <span>₹0</span>
+        </div>
+        <div class="summary-total">
+          <div>
+            Total (Inclusive of all taxes)
+            <span id="summary-total">₹2,597</span>
+          </div>
+        </div>
+        <div class="delivery-banner">✅ Yay! You get FREE delivery on this order.</div>
+      </aside>
+    </div>
+  </div>
+
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item"><span class="ti-icon">🔒</span><div><h4>100% Secure Payments</h4><p>Secure &amp; trusted checkout</p></div></div>
+        <div class="trust-item"><span class="ti-icon">🚚</span><div><h4>Fast &amp; Reliable Delivery</h4><p>On time, every time</p></div></div>
+        <div class="trust-item"><span class="ti-icon">🎂</span><div><h4>Fresher &amp; Premium Quality</h4><p>Made with the finest ingredients</p></div></div>
+        <div class="trust-item"><span class="ti-icon">🎁</span><div><h4>Perfect for Every Occasion</h4><p>Make every moment special</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding-top:0;">
+        <span>© 2026 SweetCraft. All Rights Reserved.</span>
+        <span><a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById('copy-upi')?.addEventListener('click', () => {
+      navigator.clipboard.writeText('sweetcraft@upi');
+    });
+  </script>
+</body>
+</html>

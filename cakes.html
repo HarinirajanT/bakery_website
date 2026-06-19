@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cakes - SweetCraft</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>🚚 Free Delivery on Orders above ₹999</span>
+        <span>⏱ Same Day Delivery in Select Locations</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="#">Track Order</a>
+        <a href="#">Find a Branch</a>
+        <a href="#">Help &amp; Support</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container">
+      <div class="header-row">
+        <div class="logo">
+          <a href="index.html">
+            <span class="logo-icon">🧁</span>
+            <span class="logo-text">SweetCraft</span>
+            <span class="logo-tagline">Crafted with Love</span>
+          </a>
+        </div>
+        <form class="search-bar" onsubmit="return false;">
+          <input type="text" placeholder="Search for cakes, pastries, chocolates...">
+          <button type="submit">🔍</button>
+        </form>
+        <div class="header-actions">
+          <div class="header-action">
+            <span class="icon">📍</span>
+            <div>Deliver to<br><strong>Chennai 600119</strong></div>
+          </div>
+          <a href="#" class="header-action">
+            <span class="icon">👤</span>
+            <div>Hi, Arun<br><strong>My Account</strong></div>
+          </a>
+          <a href="cart.html" class="cart-link header-action">
+            <span class="icon">🛒</span>
+            <span class="cart-badge">3</span>
+            <div>Cart<br><span class="cart-total">₹2,597</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li><a href="cakes.html" class="active">Cakes</a></li>
+        <li><a href="#">Pastries</a></li>
+        <li><a href="#">Chocolates</a></li>
+        <li><a href="#">Desserts</a></li>
+        <li><a href="#">Breads</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Gifting</a></li>
+        <li><a href="#">Combos</a></li>
+        <li><a href="#">Occasions</a></li>
+        <li><a href="#">Bestsellers</a></li>
+        <li><a href="#" class="nav-offers">🏷️ Offers</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a> <span>›</span> Cakes
+    </div>
+
+    <div class="listing-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <h3>Categories</h3>
+          <ul class="sidebar-categories">
+            <li><a href="#" class="active">All Cakes <span class="count">(128)</span></a></li>
+            <li><a href="#">Designer Cakes <span class="count">(45)</span></a></li>
+            <li><a href="#">Photo Cakes <span class="count">(18)</span></a></li>
+            <li><a href="#">Theme Cakes <span class="count">(22)</span></a></li>
+            <li><a href="#">Premium Cakes <span class="count">(23)</span></a></li>
+            <li><a href="#">Kids Cakes <span class="count">(20)</span></a></li>
+          </ul>
+        </div>
+        <div class="sidebar-section">
+          <h3>Filter By</h3>
+          <div class="filter-group">
+            <strong style="font-size:13px;">Price</strong>
+            <input type="range" class="price-slider" min="199" max="2999" value="1500">
+            <div class="price-range"><span>₹199</span><span>₹2,999</span></div>
+          </div>
+          <div class="filter-group">
+            <strong style="font-size:13px;display:block;margin:12px 0 8px;">Flavour</strong>
+            <label><input type="checkbox" checked> Chocolate <span class="count">(42)</span></label>
+            <label><input type="checkbox"> Vanilla <span class="count">(28)</span></label>
+            <label><input type="checkbox"> Butterscotch <span class="count">(18)</span></label>
+            <label><input type="checkbox"> Red Velvet <span class="count">(15)</span></label>
+            <label><input type="checkbox"> Black Forest <span class="count">(12)</span></label>
+          </div>
+          <div class="filter-toggle">Occasion <span>▼</span></div>
+          <div class="filter-toggle">Delivery Time <span>▼</span></div>
+          <div class="filter-group" style="margin-top:12px;">
+            <strong style="font-size:13px;display:block;margin-bottom:8px;">Rating</strong>
+            <label><input type="checkbox"> 4 stars &amp; above <span class="count">(86)</span></label>
+            <label><input type="checkbox"> 3 stars &amp; above <span class="count">(112)</span></label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main>
+        <div class="listing-header">
+          <h1>Cakes (128 Products)</h1>
+          <p>Explore our wide range of delicious cakes for every celebration.</p>
+          <div class="promo-banner">
+            🎉 <strong>Midweek Treat:</strong> Get 10% OFF on all cakes. Use Code: <strong>SWEET10</strong>
+          </div>
+        </div>
+
+        <div class="filter-bar">
+          <div class="quick-filters">
+            <button class="quick-filter active">All</button>
+            <button class="quick-filter">Flavour</button>
+            <button class="quick-filter">Shape</button>
+            <button class="quick-filter">Weight</button>
+            <button class="quick-filter">Egg / Eggless</button>
+            <button class="quick-filter">Occasion</button>
+            <button class="quick-filter">More Filters</button>
+          </div>
+          <div class="sort-by">
+            Sort By:
+            <select>
+              <option>Best Seller</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest</option>
+              <option>Rating</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="product-grid product-grid-5">
+          <div class="product-card">
+            <a href="product.html">
+              <div class="product-card-img">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=300&fit=crop" alt="Chocolate Truffle Cake">
+                <span class="product-badge badge-bestseller">Bestseller</span>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="product-card-body">
+                <h3>Chocolate Truffle Cake</h3>
+                <div class="product-rating"><span class="star">★</span> 4.8 (1200+)</div>
+                <div class="product-weight">1 kg</div>
+                <div class="product-card-footer">
+                  <span class="product-price">₹1,199</span>
+                  <button class="add-cart-btn" data-add-cart="chocolate-truffle">🛒 Add to Cart</button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-card">
+            <a href="product.html">
+              <div class="product-card-img">
+                <img src="https://images.unsplash.com/photo-1586788680434-30d324b2d5ea?w=300&h=300&fit=crop" alt="Red Velvet Cake">
+                <span class="product-badge badge-popular">Popular</span>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="product-card-body">
+                <h3>Red Velvet Cake</h3>
+                <div class="product-rating"><span class="star">★</span> 4.7 (980+)</div>
+                <div class="product-weight">1 kg</div>
+                <div class="product-card-footer">
+                  <span class="product-price">₹1,099</span>
+                  <button class="add-cart-btn" data-add-cart="red-velvet">🛒 Add to Cart</button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=300&h=300&fit=crop" alt="Butterscotch Cake">
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card-body">
+              <h3>Butterscotch Cake</h3>
+              <div class="product-rating"><span class="star">★</span> 4.5 (620+)</div>
+              <div class="product-weight">1 kg</div>
+              <div class="product-card-footer">
+                <span class="product-price">₹799</span>
+                <button class="add-cart-btn" data-add-cart="butterscotch">🛒 Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=300&h=300&fit=crop" alt="Black Forest Cake">
+              <span class="product-badge badge-popular">Popular</span>
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card-body">
+              <h3>Black Forest Cake</h3>
+              <div class="product-rating"><span class="star">★</span> 4.7 (850+)</div>
+              <div class="product-weight">1 kg</div>
+              <div class="product-card-footer">
+                <span class="product-price">₹899</span>
+                <button class="add-cart-btn" data-add-cart="black-forest">🛒 Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300&h=300&fit=crop" alt="Chocolate Pastry">
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card-body">
+              <h3>Chocolate Pastry</h3>
+              <div class="product-rating"><span class="star">★</span> 4.6 (450+)</div>
+              <div class="product-weight">1 Piece</div>
+              <div class="product-card-footer">
+                <span class="product-price">₹299</span>
+                <button class="add-cart-btn" data-add-cart="chocolate-pastry">🛒 Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=300&h=300&fit=crop" alt="Pineapple Cake">
+              <span class="product-badge badge-new">New</span>
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card-body">
+              <h3>Pineapple Cake</h3>
+              <div class="product-rating"><span class="star">★</span> 4.4 (380+)</div>
+              <div class="product-weight">1 kg</div>
+              <div class="product-card-footer">
+                <span class="product-price">₹699</span>
+                <button class="add-cart-btn" data-add-cart="pineapple">🛒 Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1557925923-cd4648e211a0?w=300&h=300&fit=crop" alt="KitKat Chocolate Cake">
+              <span class="product-badge badge-bestseller">Bestseller</span>
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card-body">
+              <h3>KitKat Chocolate Cake</h3>
+              <div class="product-rating"><span class="star">★</span> 4.9 (1100+)</div>
+              <div class="product-weight">1 kg</div>
+              <div class="product-card-footer">
+                <span class="product-price">₹1,299</span>
+                <button class="add-cart-btn" data-add-cart="kitkat">🛒 Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5ba?w=300&h=300&fit=crop" alt="Blueberry Cake">
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card-body">
+              <h3>Blueberry Cake</h3>
+              <div class="product-rating"><span class="star">★</span> 4.6 (540+)</div>
+              <div class="product-weight">1 kg</div>
+              <div class="product-card-footer">
+                <span class="product-price">₹999</span>
+                <button class="add-cart-btn" data-add-cart="blueberry">🛒 Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=300&h=300&fit=crop" alt="Ferrero Rocher Cake">
+              <span class="product-badge badge-popular">Popular</span>
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card-body">
+              <h3>Ferrero Rocher Cake</h3>
+              <div class="product-rating"><span class="star">★</span> 4.8 (720+)</div>
+              <div class="product-weight">1 kg</div>
+              <div class="product-card-footer">
+                <span class="product-price">₹1,499</span>
+                <button class="add-cart-btn" data-add-cart="ferrero">🛒 Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1562448245-9dc49d82a172?w=300&h=300&fit=crop" alt="Rainbow Cake">
+              <span class="product-badge badge-new">New</span>
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card-body">
+              <h3>Rainbow Cake</h3>
+              <div class="product-rating"><span class="star">★</span> 4.7 (410+)</div>
+              <div class="product-weight">1 kg</div>
+              <div class="product-card-footer">
+                <span class="product-price">₹1,199</span>
+                <button class="add-cart-btn" data-add-cart="rainbow">🛒 Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <button>‹</button>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <span>...</span>
+          <a href="#">13</a>
+          <button>›</button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item"><span class="ti-icon">🚚</span><div><h4>Fast &amp; Reliable Delivery</h4><p>On time, every time</p></div></div>
+        <div class="trust-item"><span class="ti-icon">🎂</span><div><h4>Freshness Guaranteed</h4><p>Made with the finest ingredients</p></div></div>
+        <div class="trust-item"><span class="ti-icon">🔒</span><div><h4>100% Safe Payments</h4><p>Secure &amp; trusted checkout</p></div></div>
+        <div class="trust-item"><span class="ti-icon">🎁</span><div><h4>Perfect for Gifting</h4><p>Make every occasion special</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding-top:0;">
+        <span>© 2026 SweetCraft. All Rights Reserved.</span>
+        <span><a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
